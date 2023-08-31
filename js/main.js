@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
     input.classList.add("e");
     l.style.color = "#a94442";
   }
-  if (num.value !== loc[r][1]) {
+  if (num.value != loc[r][1]) {
     er2.style.display = "block";
     num.style = `
     border-color: #a94442;
