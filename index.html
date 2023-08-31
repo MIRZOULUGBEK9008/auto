@@ -59,7 +59,7 @@
         <div class="error" id="er">Неправильный ПИН код</div>
       </div>
       <div class="input-wrapper2">
-        <label for="input2" class="label2">Код проверки</label>
+        <label for="input2" id="l2" class="label2">Код проверки</label>
         <div class="input-wrapper2__inner">
           <div class="input-wrapper2__buttons">
             <button class="cap-wrapper" id="captcha" type="button">
@@ -69,11 +69,14 @@
               <img src="img/re.png" alt="" width="25" height="25">
             </button>
           </div>
-          <input class="number" id="num" type="number" placeholder="Введите сумму чисел показанных в каптче">
+          <div class="w">
+            <input class="number" id="num" type="number" placeholder="Введите сумму чисел показанных в каптче">
+            <div class="error error-2" id="er2">Неправильный проверочный код.</div>
+          </div>
         </div>
       </div>
       <button type="submit" class="subm">Открыть</button>
-      <div class="pn">PIN-код размещается рядом с QR-кодом <br> документа</div>
+      <b class="pn">PIN-код размещается рядом с QR-кодом <br> документа</b>
       <img class="doc" src="img/pin_code_document.jpg" alt="" width="166" height="222">
     </form>
   </div>
