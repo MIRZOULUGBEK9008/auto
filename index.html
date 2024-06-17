@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Единый портал интерактивных государственных услуг</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- STYLES  -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="header__container container">
+      <a class="site-header__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo_mobile.png" alt="Site logo" width="45" height="45">
+      </a>
+      <div class="toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="message" id="message">
+    <div class="message__container container">
+      <div class="message__message">
+        <button id="close" class="close">✖</button>
+        <p class="message__description">Пожалуйста пройдите авторизацию<br>чтобы система определила вас.
+          Если<br>документ
+          принадлежит вам, введения<br>ПИН кода не
+          требуется. <a href="#">Нажмите здесь<br>для авторизации</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="pin">Введите PIN-код для просмотра документа</p>
+  </div>
+  <div class="container">
+    <form id="form">
+      <div class="input-wrapper">
+        <label class="label1" for="input" id="l">ПИН код</label>
+        <input class="input1" id="input" type="text" required autocomplete="off" aria-required="true" placeholder="____"
+          maxlength="4" size="4">
+        <div class="error" id="er">Неправильный ПИН код</div>
+      </div>
+      <div class="input-wrapper2">
+        <label for="input2" id="l2" class="label2">Код проверки</label>
+        <div class="input-wrapper2__inner">
+          <div class="input-wrapper2__buttons">
+            <button class="cap-wrapper" id="captcha" type="button">
+              <img class="cap" id="captchaimg" src="" alt="">
+            </button>
+            <button id="newcaptcha" type="button">
+              <img src="img/re.png" alt="" width="25" height="25">
+            </button>
+          </div>
+          <div class="w">
+            <input class="number" id="num" type="number" placeholder="Введите сумму чисел показанных в каптче">
+            <div class="error error-2" id="er2">Неправильный <br> проверочный код.</div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="subm">Открыть</button>
+      <b class="pn">PIN-код размещается рядом с QR-кодом <br> документа</b>
+      <img class="doc" src="img/pin_code_document.jpg" alt="" width="166" height="222">
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
